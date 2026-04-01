@@ -114,3 +114,9 @@ h1 {
     color: #ffffff;
     font-size: 13px;
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .profile-pic {
+        display: none !important;
+    }
+}
