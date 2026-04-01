@@ -86,16 +86,8 @@ h1 {
     display: none !important;
 }
 
-.compact-list,
 .compact-list li {
-    color: #ffffff;
-}
-
-.compact-list {
-    opacity: 1;
-}
-.compact-list {
-    opacity: 0.85;
+    color: #cfcfcf;
 }
 
 .engage-icons {
@@ -121,8 +113,4 @@ h1 {
 .engage-icons a span {
     color: #ffffff;
     font-size: 13px;
-}
-
-.compact-list span {
-    color: #cfcfcf;
 }
