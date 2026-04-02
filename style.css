@@ -207,3 +207,6 @@ h1 {
     object-fit: cover;
     display: block;
 }
+.profile-pic {
+    display: block !important;
+}
