@@ -165,3 +165,34 @@ h1 {
         display: none !important;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .bottom {
+        display: block;
+    }
+
+    .profile-pic {
+        display: none !important;
+    }
+
+    .impact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .impact-grid .box {
+        flex: unset;
+        min-width: auto;
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    .impact-grid .box b {
+        font-size: 14px;
+    }
+}
