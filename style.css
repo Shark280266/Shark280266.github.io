@@ -211,3 +211,11 @@ h1 {
 .profile-pic {
     display: block !important;
 }
+
+@media screen and (min-width: 1025px) {
+  .profile-pic {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
