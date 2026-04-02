@@ -85,7 +85,6 @@ h1 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
 }
 
 /* Floating Home link (if used) */
@@ -161,61 +160,8 @@ h1 {
     font-size: 13px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: landscape) {
     .profile-pic {
         display: none !important;
     }
-}
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-    
-    .grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    .bottom {
-        display: block;
-    }
-
-    .profile-pic {
-        display: none !important;
-    }
-
-    .impact-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-
-    .impact-grid .box {
-        flex: unset;
-        min-width: auto;
-        font-size: 11px;
-        padding: 6px;
-    }
-
-    .impact-grid .box b {
-        font-size: 14px;
-    }
-}
-.profile-pic {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-}
-.profile-pic {
-    display: block !important;
-}
-
-@media screen and (min-width: 1025px) {
-  .profile-pic {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
 }
