@@ -333,9 +333,14 @@ h1 {
 }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) and (orientation: portrait) {
     .profile-pic {
+        float: none;
+        position: static;
+        width: 70px;
+        height: 70px;
         display: none;
+        margin: 0 0 8px 0;
     }
 }
 }
