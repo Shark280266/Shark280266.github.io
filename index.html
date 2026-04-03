@@ -240,6 +240,10 @@ h1 {
   border: 2px solid #d4af37;
   box-shadow: 0 0 12px rgba(212,175,55,0.5);
 }
+/* FORCE HIDE ON NON-DESKTOP FIRST */
+.profile-pic {
+    display: none;
+}
 
 .section-block {
   position: relative;
@@ -436,6 +440,13 @@ img {
         display: none !important;
         float: none !important;
         position: static !important;
+    }
+}
+@media (min-width: 1025px) {
+    .profile-pic {
+        display: block;
+        float: right;
+        position: relative;
     }
 }
 </style>
