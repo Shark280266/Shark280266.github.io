@@ -130,6 +130,7 @@ h1 {
     gap: 28px;
     margin-top: 5px;
     padding-top: 15px;
+    align-items: stretch;   /* ADD THIS */
 }
 
 .section-title {
@@ -244,6 +245,10 @@ h1 {
 .section-block {
   position: relative;
   padding-bottom: 0px;
+
+  display: flex;           /* ADD */
+  flex-direction: column;  /* ADD */
+  height: 100%;            /* ADD */
 }
 
 .more-link {
@@ -254,7 +259,10 @@ h1 {
   color: #4da3ff;
   text-decoration: none;
 }
-
+.section-block .more-link {
+    margin-top: auto;
+}
+   
 .disabled-link {
   pointer-events: none;
   opacity: 0.6;
