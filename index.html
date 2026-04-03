@@ -333,26 +333,11 @@ h1 {
 }
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
-    
-    .grid {
-        grid-template-columns: 1fr;
+@media (max-width: 1200px) {
+    .profile-pic {
+        display: none;
     }
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-.profile-pic {
-    float: none;          /* 🔥 cancels right float */
-    position: static;     /* 🔥 removes upward shift */
-    
-    width: 70px;
-    height: 70px;
-
-    display: none;
-    margin: 0 0 8px 0;    /* top-left placement */
+}
 }
 
     .container {
@@ -463,7 +448,7 @@ img {
 I partner with enterprise leaders to modernize through AI, Cloud and Emerging technologies, Stabilize portfolios; Build and scale high-performing teams;
 Create winning Go-to-market engines that drive measurable Growth and Profitable outcomes.
 </p>
-<img src="image.jpg" alt="Sharad Kumar" class="profile-pic">
+<img src="image.jpg" alt="Sharad Kumar" class="profile-pic" style="display:none;">
 
 <div class="impact">
 <div class="impact-title">IMPACT SNAPSHOT</div>
