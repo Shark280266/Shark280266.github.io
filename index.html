@@ -240,10 +240,6 @@ h1 {
   border: 2px solid #d4af37;
   box-shadow: 0 0 12px rgba(212,175,55,0.5);
 }
-/* FORCE HIDE ON NON-DESKTOP FIRST */
-.profile-pic {
-    display: none;
-}
 
 .section-block {
   position: relative;
@@ -334,15 +330,25 @@ h1 {
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
-    .profile-pic {
-        float: none;
-        position: static;
-        width: 70px;
-        height: 70px;
-        display: none;
-        margin: 0 0 8px 0;
+    
+    .grid {
+        grid-template-columns: 1fr;
     }
-}
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+.profile-pic {
+    float: none;          /* 🔥 cancels right float */
+    position: static;     /* 🔥 removes upward shift */
+    
+    width: 70px;
+    height: 70px;
+
+    display: none;
+    margin: 0 0 8px 0;    /* top-left placement */
 }
 
     .container {
@@ -425,20 +431,6 @@ img {
         display: none !important;
     }
 }
-@media (max-width: 1024px) {
-    .profile-pic {
-        display: none !important;
-        float: none !important;
-        position: static !important;
-    }
-}
-@media (min-width: 1025px) {
-    .profile-pic {
-        display: block;
-        float: right;
-        position: relative;
-    }
-}
 </style>
 </head>
 
@@ -450,10 +442,10 @@ img {
 <p class="tagline">Operating at the intersection of Technology, Delivery, and GTM strategy</p>
 
 <p class="intro">
-I partner with enterprise leaders to modernize through AI, Cloud and Emerging technologies, Stabilize portfolios; Build and scale high-performing teams;
-Create winning Go-to-market engines that drive measurable Growth and Profitable outcomes.
+I partner with enterprise Leaders to Modernize through AI, Cloud and Emerging technologies, Stabilize portfolios; Build and Scale high-performing teams;<br>
+Create winning Go-to-market engines that drive Measurable Growth and Profitable Outcomes.
 </p>
-<img src="image.jpg" alt="Sharad Kumar" class="profile-pic" style="display:none;">
+<img src="image.jpg" alt="Sharad Kumar" class="profile-pic">
 
 <div class="impact">
 <div class="impact-title">IMPACT SNAPSHOT</div>
