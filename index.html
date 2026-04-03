@@ -432,10 +432,11 @@ img {
     }
 }
 /* TABLET ONLY — HIDE PROFILE IMAGE */
-@media (min-width: 769px) and (max-width: 1100px) {
-    .profile-pic {
-        display: none !important;
-    }
+/* FORCE HIDE PHOTO ON TABLET */
+@media (min-width: 769px) and (max-width: 1400px) {
+  .profile-pic {
+    display: none !important;
+  }
 }
 </style>
 </head>
