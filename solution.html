@@ -12,9 +12,15 @@
 
 /* SOLUTION CONTENT STYLES */
 
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
     gap: 20px;
 }
 
@@ -80,19 +86,6 @@
     padding: 25px 12px 0px 12px;
 }
 
-h1 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 30px;
-    margin: 0;
-}
-
-.tagline {
-    text-align: center;
-    color: #d4af37;
-    margin: 0;
-}
-
 .profile-pic {
   float: right;
   margin-top: -75px;
@@ -117,6 +110,15 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+    
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+    
+.grid-4 + .section-title {
+    margin-top: 30px;
 }
 </style>
 </head>
