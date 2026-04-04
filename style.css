@@ -168,5 +168,6 @@ h1 {
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
     .profile-pic {
         display: none !important;
+        position: static !important;
     }
 }
