@@ -160,18 +160,7 @@ h1 {
     font-size: 13px;
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
-    .profile-pic {
-        display: none !important;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-    .profile-pic {
-        display: none !important;
-        position: static !important;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .profile-pic {
         display: none !important;
     }
