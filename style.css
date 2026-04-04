@@ -171,3 +171,8 @@ h1 {
         position: static !important;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .profile-pic {
+        display: none !important;
+    }
+}
